@@ -6,37 +6,37 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="main-header">
+      <div class="container clearfix">
         <nav class="header-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
+          <ul><!--
+            --><li><!--
+              --><a href="#">Информация</a>
+            </li><!--
+            --><li>
               <a href="#">Фото и видео</a>
-            </li>
-            <li>
+            </li><!--
+            --><li class="header-logo">
+              <a href="https://sedona.ru/index.html">
+                <img src="img/logo_sedona.png" width="138" height="70" alt="City of Sedona">
+              </a>  
+            </li><!--
+            --><li>
               <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>
-          </ul>  
-        </nav>    	
-      </div>
-      <div class="header-logo">
-        <a href="https://sedona.ru/index.html">
-          <img src="http://placehold.it/138x70" width="138" height="70" alt="City of Sedona">
-        </a>
+            </li><!--
+            --><li class="active">
+              <a>Гостиницы</a>
+            </li><!--
+          --></ul>  
+        </nav>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <div class="filters">
-        <img class="filters-background" src="http://placehold.it/1200x217" width="1200" height="217" alt="City of Sedona">
+        <!--<img class="filters-background" src="" width="1200" height="217" alt="City of Sedona">-->
         <form class="filters-form" action="" method="post">
-          <fieldset>                   
-            <legend><b>Инфраструктура:</b></legend>>
+          <fieldset class="filter filter-checkbox-struct">                   
+            <legend><b>Инфраструктура:</b></legend>
             <label>
               <input type="checkbox" name="pool">
               Бассейн 
@@ -50,7 +50,7 @@
               Wi-Fi
             </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter filter-checkbox-appart">
             <legend><b>Тип жилья:</b></legend>         
             <label>
               <input type="checkbox" name="hotel">
@@ -65,92 +65,116 @@
               Апартаменты
             </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-range">
             <legend><b>Стоимость в сутки (Р):</b></legend>
-            <input type="text" name="min-price" id="" placeholder="От 0" value="" >
-            <input type="text" name="max-price" id="" placeholder="До 3000" value="">
-            <div class="range-slider">
-              <input type="range" name="range-slider">
-            </div> 
+            <div class="range">
+              <input type="text" name="min-price" id="" placeholder="От 0" value="" >
+              <input type="text" name="max-price" id="" placeholder="До 3000" value="">
+              <div class="range-slider">
+                <input type="range" name="range-slider">
+              </div>
+            </div>   
             <a class="btn" href="#">Показать</a>
           </fieldset>    
         </form>
       </div>  
       <div class="results">
-        <h1>Найдено:<div class="show-results">3</div></h1>
-        <div class="results-sorting">
-          <span>Сортировка:</span>
-          <ul>
+        <div class="results-title">
+          <div class="results-find">
+            <h1>Найдено: 3</h1>
+          </div>
+          <ul class="results-sorting clearfix">
             <li>
+              <span>Сортировка:</span>
+            </li>
+            <li class="active">
               <a href="#">По цене</a>
+             </li>
+             <li>
+               <a href="#">По типу</a>
             </li>
             <li>
-              <a href="#">По типу</a>
-            </li>
-            <li>
-              <a href="#">По рейтингу</a>
+               <a href="#">По рейтингу</a>
             </li>
           </ul>
-          <a class="sorting-icon-up" href="#">
-            <img src="http://placehold.it/11x10" width="11" height="10">
-          </a>
-          <a class="sorting-icon-down" href="#">
-            <img src="http://placehold.it/11x10" width="11" height="10">
-          </a>
+          <div class="sorting-triangles">
+            <a class="sorting-icon-up" href="#">
+              <img src="http://placehold.it/11x10" width="11" height="10">
+            </a>
+            <a class="sorting-icon-down" href="#">
+              <img src="http://placehold.it/11x10" width="11" height="10">
+            </a>
+          </div>  
         </div>  
-        <div class="results-hotels">
-          <article class="results-hotels-item">
-            <img src="img/AmaraResort&Spa_img.jpg" width="135" height="90" alt="Amara Resort and Spa">
-            <b>Amara Resort & Spa</b>
+        <article class="results-hotels-item clearfix"> 
+          <div class="hotel-img">
+            <img src="img/AmaraResort&Spa_img.jpg" width="135" height="90" alt="AmarResort and Spa">
+          </div>
+          <div class="hotel-info"> 
+            <p><b>Amara Resort & Spa</b></p>
             <span>Гостиница</span>
             <span>От 3500 Р.</span>
             <a class="btn" href="#">Подробнее</a>
             <a class="btn" href="#">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
             <div class="four-star-icon">
-              <img src="http://placehold.it/89x17" width="89" height="17" alt="four-stars"> 
+              <img class="hotel-stars" src="http://placehold.it/89x17" width="89" height="17" alt="four-stars"> 
             </div>
-            <span>Рейтинг: 8,5</span>
-          </article>
-          <article class="results-hotels-item">
-            <img src="img/DesetQuailInn_img.jpg" width="135" height="90" alt="Desert Quail Inn">
-            <b>Desert Quail Inn</b>
+            <p class="rate-number">Рейтинг: 8,5</p>
+          </div>         
+        </article>
+        <article class="results-hotels-item clearfix">
+          <div class="hotel-img">
+            <img src="img/DesertQuailInn_img.jpg" width="135" height="90" alt="Desert Quail Inn">
+          </div>
+          <div class="hotel-info">       
+            <p><b>Desert Quail Inn</b></p>
             <span>Мотель</span>
             <span>ОТ 2000 Р.</span>
             <a class="btn" href="#">Подробнее</a>
             <a class="btn" href="#">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
             <div class="two-star-icon">
-              <img src="http://placehold.it/89x17" width="89" height="17" alt="two-stars"> 
+              <img class="hotel-stars" src="http://placehold.it/89x17" width="89" height="17" alt="two-stars">
             </div>
-            <span>Рейтинг: 8,9</span>
-          </article>
-          <article class="results-hotels-item">
+            <p class="rate-number">Рейтинг: 8,9</p>
+          </div>               
+        </article>
+        <article class="results-hotels-item clearfix">
+          <div class="hotel-img">
             <img src="img/VillasAtPocoDiablo_img.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-            <b>Villas at Poco Diablo</b>
+          </div>
+          <div class="hotel-info">
+            <p><b>Villas at Poco Diablo</b></p>
             <span>Апартаменты</span>
             <span>От 4000 Р.</span>
             <a class="btn" href="#">Подробнее</a>
             <a class="btn" href="#">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
             <div class="three-star-icon">
-              <img src="http://placehold.it/89x17" width="89" height="17" alt="three-stars"> 
+              <img class="hotel-stars" src="http://placehold.it/89x17" width="89" height="17" alt="three-stars"> 
             </div>
-            <span>Рейтинг: 9,2</span>
-          </article>
-        </div>    
+            <p class="hotel-rate">Рейтинг: 9,2</p>
+          </div>           
+        </article> 
       </div>  
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-hashtag">
           <b>#visitsedona</b>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-twitter" href="#"> Twitter
+          <a class="social-btn social-btn-twitter" href="#">
             <img src="http://placehold.it/46x48" width="46" height="48" alt="Twitter">
           </a>
-          <a class="social-btn social-btn-fb" href="#"> Facebook
+          <a class="social-btn social-btn-fb" href="#">
             <img src="http://placehold.it/46x48" width="46" height="48" alt="Facebook">
           </a>
-          <a class="social-btn social-btn-youtube" href="#"> Youtube
+          <a class="social-btn social-btn-youtube" href="#">
             <img src="http://placehold.it/46x48" width="46" height="48" alt="Youtube">
           </a>
         </section>

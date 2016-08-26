@@ -6,53 +6,51 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="main-header">
+      <div class="container clearfix">
         <nav class="header-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
+          <ul><!--
+            --><li class="active"><!--
+              --><a>Информация</a>
+            </li><!--
+            --><li>
               <a href="#">Фото и видео</a>
-            </li>
-            <li>
+            </li><!--
+            --><li class="header-logo">
+              <img src="img/logo_sedona.png" width="138" height="70" alt="City of Sedona">
+            </li><!--
+            --><li>
               <a href="#">Карта штата</a>
-            </li>
-            <li>
+            </li><!--
+            --><li>
               <a href="#">Гостиницы</a>
-            </li>
-          </ul>  
+            </li><!--
+          --></ul>  
         </nav>    	
       </div>
-      <div class="header-logo">
-        <img src="img/logo_sedona.png" width="138" height="70" alt="City of Sedona">
-      </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <div class="main-screen">
-        <div class="main-title">
-          <img href="img/Welcome to the gorgeous_text.png" alt="Welcome to the gorgeous">
-          <img href="img/Sedona_text.png" alt="Sedona">
-          <img href="img/Because the Grand Canyon sucks_text.png" alt="Because the Grand Canyon sucks">
-        </div>
-        <img class="main-background-img" src="http://placehold.it/1200x510" width="1200" height="510" alt="SEDONA">.
+        <img class="main-title" src="img/Welcome_to_the_gorgeous.png" width="256" height="86" alt="Welcome to the gorgeous">
+        <img class="main-title" src="img/Sedona_text.png" width="458" height="78" alt="Sedona">
+        <img class="main-title" src="img/Because_the_Grand_Canyon_sucks.png" width="298" height="80" alt="Because the Grand Canyon sucks">
       </div>
+        <!--<img class="main-background-img" src="img/index_title_background.jpg" width="1200" height="510" alt="SEDONA">-->
       <div class="content-title">
         <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
-      <div>      
-      <section class="reason">
+      </div>      
+      <section class="reason-one">
         <div class="reason-text-left">
           <b class="reason-name">Настоящий городок</b>
-          <span>№1</span>
+          <p>№1</p>
           <p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
         </div>
         <div class="reason-image-right">
           <img src="img/reason_1_img.jpg" width="800" height="256" alt="Настоящий городок">
         </div>
       </section>
-      <section class="features">
+      <section class="features-one">
         <section class="features-item">
           <div class="features-icon">
             <img src="http://placehold.it/75x75" width="75" height="75" alt="Жилье">
@@ -75,89 +73,89 @@
           <p>Не только китайского, но и местного<br> производства!</p>
         </section>
       </section>
-      <section class="reason">
+      <section class="reason-two">
         <div class="reason-text-right">
           <b class="reason-name">Там есть мост дьявола</b>
-          <span>№2</span>
+          <p>№2</p>
           <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
         </div>
         <div class="reason-image-left">
           <img src="img/reason_2_img.jpg" width="800" height="256" alt="Мост дьявола">
         </div>
       </section>
-      <section class="features">
+      <section class="features-two">
         <section class="features-item">
           <b class="features-name">Небольшая площадь</b>
-          <span>№3</span>
+          <p>№3</span>
           <p>Все достопримечательности<br> находятся очень близко</p>
         </section>
         <section class="features-item">
           <b class="features-name">Красивая дорога</b>
-          <span>№4</span>
+          <p>№4</p>
           <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
         </section>
         <section class="features-item">
           <b class="features-name">Мало туристов</b>
-          <span>№5</span>
+          <p>№5</p>
           <p>Большинство едет в Гранд каньон и<br> толпится там</p>
         </section>
-        <img class="features-background-grey" src="http://placehold.it/1200x256" width="1200" height="256">
+        <!-- <img class="features-background-grey" src="http://placehold.it/1200x256" width="1200" height="256"> -->
       </section>
       <div class="content-title">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p> 
       <div>
-      <div class="search-hotels">
-        <button class="btn" type="">Поиск гостиницы в Седоне</button> 
-        <form class="search-hotels-form" method="post">
-          <fieldset>
-            <div class="checkin-date">
+      <div class="search-section">
+        <div class="search-hotels">
+          <div class="search-button">
+            <button class="btn" type="">Поиск гостиницы в Седоне</button>
+          </div>
+          <form class="search-hotels-form" method="post">
+              <div class="checkin-date">
               <label>
-                Дата заезда: <input type="text" name="check-in" value="24 Апреля 2016">
-                <input type="date" name="check-in">
-              </label>
-              <img src="http://placehold.it/21x22" width="21" height="22" alt="calendar"> 
-            </div>
-            <div class="checkout-date">
-              <label>
-                Дата выезда: <input type="text" name="check-out" value="4 июля 2016">
-                <input type="date" name="check-out">
-              </label> 
-              <img src="http://placehold.it/21x22" width="21" height="22" alt="calendar">
-            </div>
-            <div class="adult">  
-              <label for="adultcount">Взрослые:</label>
-              <button class="btn minus">-</button>
-              <input type="text" id="adultcount" name="adultcount">
-              <button class="btn plus">+</button>
-            </div>
-            <div class="child"> 
-              <label for="childcount">Дети:</label>
-              <button class="btn minus">-</button>
-              <input type="text" id="childcount" name="adultcount">
-              <button class="btn plus">+</button>
-            </div> 
-            <a class="btn" href="#">Найти</a>
-          </fieldset>
-        </form>
-      </div>
-      <div class="background-map">
-        <img src="img/map.jpg" width="1200" height="593" alt=" HTML Academy">
-      </div>
+                  Дата заезда: <input type="text" name="check-in" value="24 Апреля 2016">
+                  <input type="date" name="check-in">
+                </label>
+                <img src="http://placehold.it/21x22" width="21" height="22" alt="calendar"> 
+              </div>
+              <div class="checkout-date">
+                <label>
+                  Дата выезда: <input type="text" name="check-out" value="4 июля 2016">
+                  <input type="date" name="check-out">
+                </label> 
+                <img src="http://placehold.it/21x22" width="21" height="22" alt="calendar">
+              </div>
+              <div class="adult">  
+                <label for="adultcount">Взрослые:</label>
+                <button class="btn minus">-</button>
+                <input type="text" id="adultcount" name="adultcount">
+                <button class="btn plus">+</button>
+              </div>
+             <div class="child"> 
+                <label for="childcount">Дети:</label>
+                <button class="btn minus">-</button>
+                <input type="text" id="childcount" name="adultcount">
+                <button class="btn plus">+</button>
+              </div> 
+              <a class="btn" href="#">Найти</a>
+          </form>
+        </div>
+        <!--<img class="background-map" src="img/map.jpg" width="1200" height="593" alt=" HTML Academy">-->
+      </div>    
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-hashtag">
           <b>#visitsedona</b>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-twitter" href="#"> Twitter
+          <a class="social-btn social-btn-twitter" href="#" title="twitter">
             <img src="http://placehold.it/46x48" width="46" height="48" alt="Twitter">
           </a>
-          <a class="social-btn social-btn-fb" href="#"> Facebook
+          <a class="social-btn social-btn-fb" href="#"> 
             <img src="http://placehold.it/46x48" width="46" height="48" alt="Facebook">
           </a>
-          <a class="social-btn social-btn-youtube" href="#"> Youtube
+          <a class="social-btn social-btn-youtube" href="#">
             <img src="http://placehold.it/46x48" width="46" height="48" alt="Youtube">
           </a>
         </section>

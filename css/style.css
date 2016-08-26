@@ -1,23 +1,398 @@
+/* Подключение шрифтов */
+
 body {
-  font-family: "PT Sans", "Helvetica" sans-serif;
+  font-family: "PT Sans", "Helvetica", sans-serif;
   font-size: 14px;
-  font-weight: 400; 	 
+  font-weight: 400; 
+  text-transform: uppercase;	 
   line-height: 21px;
   color: #333333;
 }
 
 h1 {
-  font-family: "PT Sans", "Helvetica" sans-serif;
+  font-family: "PT Sans", "Helvetica", sans-serif;
   font-size: 21px;
-  font-weight: 700; 	 
+  font-weight: 700; 
+
   line-height: 26px;
   color: #000000;  
 }
 
 h2 {
-  font-family: "PT Sans", "Helvetica" sans-serif;
+  font-family: "PT Sans", "Helvetica", sans-serif;
   font-size: 30px;
   font-weight: 700; 	 
   line-height: 24px
   color: #000000;
 }
+
+/* Построение сетки */
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 2762px;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  background-color: red; 
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+/* Хедер */
+
+.main-header {
+  background-color: blue;
+  min-height: 56px;
+}
+
+.header-navigation {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-navigation ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-navigation li {
+  background-color: yellow;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header-navigation .active a {
+  text-decoration: none;
+}
+
+/* Основной контент главной */
+
+.main-screen {
+  background-color: blue;
+  width: 1200px;
+  height: 510px;
+}
+
+.main-title {
+  background-color: yellow;
+  display: block;
+  margin: 0 auto; 
+  padding-top: 76px;
+}
+
+.content-title h1 {
+  background-color: yellow;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.content-title p {
+  background-color: yellow;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 57px;
+  text-align: center;
+
+}
+
+.reason-one {
+  background-color: blue;
+  width: 1200px;
+  min-height: 256px;
+  margin-bottom: 56px;
+}
+
+.reason-text-left {
+  float: left;
+  background-color: yellow; 
+  width: 400px;
+  min-height: 256px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.reason-image-right {
+  float: right;
+}
+
+.features-one {
+  background-color: blue;
+  height: 186px;
+  padding-left: 72px:
+  padding-right: 72px; 
+  margin-bottom: 88px;
+}
+
+.features-item {
+  background-color: yellow;
+  float: left;
+  width: 400px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*.features-item:nth-child(1) {
+  margin-left: 73px;
+  margin-right: 134px;
+}
+
+.features-item:nth-child(2) {
+  margin-right: 122px;
+}*/
+
+.reason-two {
+  background-color: blue;
+  width: 1200px;
+  min-height: 256px;
+  margin-bottom: 50px;
+}
+
+.reason-image-left {
+  float: left;
+}
+
+.reason-text-right {
+  background-color: yellow; 
+  float: right;
+  width: 400px;
+  min-height: 256px;
+  text-align: center;
+}
+
+.features-two {
+  background-color: blue;
+  width: 1200px;
+  height: 256px;
+  padding-left: 72px:
+  padding-right: 72px; 
+  margin-bottom: 57px;
+}
+
+/*.features-item:nth-child(4) {
+  margin-left: 95px;
+  margin-right: 166px;
+}
+
+.features-item:nth-child(5) {
+  margin-left: 95px;
+  margin-right: 139px;
+}*/
+
+.content-title h2 {
+  background-color: yellow;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.search-section {
+  background-color: blue;
+  width: 1200px; 
+  height: 593px;
+}
+
+.search-button {
+  background-color: yellow;
+  width: 568px; 
+  height: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+}
+
+.search-hotels-form {
+  background-color: yellow;
+  width: 568px; 
+  height: 395px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Фильты */
+
+.filters {
+ background-color: blue;
+ width: 1200px;
+ height: 217px;  
+}
+
+.filters-form {
+  padding-top: 31px;
+}
+
+.filter-checkbox-struct {
+  background-color: yellow;
+  float: left;
+  width: 140px;
+  margin-left: 73px;
+  margin-right: 114px;
+
+}
+
+.filter-checkbox-appart {
+  background-color: yellow;
+  float: left;
+  width: 140px;
+}
+
+.filter-range {
+  background-color: yellow;
+  float: right;
+  width: 328px;
+  margin-right: 73px;
+  text-align: center;
+}
+
+.filter-range legend {
+  text-align: left;  
+}
+
+.filter label {
+  display: block;
+}
+
+/* Результаты поиска отелей */
+
+.results { 
+  background-color: grey;
+  height: 540px;
+  padding-left: 73px;
+  padding-right: 73px;  
+}
+
+.results-title {
+  background-color: blue;
+  height: 86px;
+}
+
+.results-find {
+  background-color: yellow; 
+  float: left;
+}
+
+.results-sorting {
+  background-color: yellow;
+  float: left;
+  list-style: none;
+}
+
+.results-sorting li {
+  display: inline;
+  padding-left: 20px;
+}
+
+.results-sorting .active a {
+  text-decoration: none;
+}
+
+.sorting-triangles {
+  background-color: yellow;
+  float: right;
+  margin-top: 20px;
+}
+
+.sorting-triangles a {
+  text-decoration: none;
+}
+
+.hotel-img {
+  background: yellow;
+  float: left;
+  width: 140px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hotel-info {
+  background: yellow;
+  float: left;
+  margin-top: 30px;
+}
+
+.hotel-rating {
+  background: yellow;
+  float: right;
+  width: 100px;
+  margin-top: 30px;
+}
+
+/* Футер */
+
+.page-footer {
+  background-color: blue;
+  height: 120px;
+  padding-top: 36px;
+}
+
+.footer-hashtag {
+  background-color: yellow;
+  float: left;
+  width: 136px;
+  margin-left: 132px;
+  margin-right: 256px;
+
+}
+
+.footer-social {
+ display: inline-block;
+ background-color: yellow;
+ width: 150px; 
+}
+
+.footer-social a {
+  text-decoration: none;
+}
+
+
+.footer-copyright {
+  background-color: yellow;
+  display: block;
+  float: right;
+  min-width: 190px;
+  margin-right: 103px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
