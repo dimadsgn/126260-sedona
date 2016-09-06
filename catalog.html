@@ -34,36 +34,24 @@
       </header>
       <main class="container clearfix">
         <div class="filters">
-          <form class="filters-form" action="" method="post">
-            <fieldset class="filter-checkbox-struct filter">                   
-              <legend class="filter-title">Инфраструктура:</legend>
-              <label>
-                <input type="checkbox" name="pool">
-                Бассейн 
-              </label>          
-              <label> 
-                <input type="checkbox" name="park">
-                Парковка
-              </label>        
-              <label>
-                <input type="checkbox" name="wifi">
-                Wi-Fi
-              </label>
-            </fieldset>
-            <fieldset class="filter filter-checkbox-appart">
+          <form class="filters-form" action="echo" method="post">
+            <fieldset class="filter-checkbox filter clearfix">                   
+              <legend class="filter-title">Инфраструктура:</legend><!--
+              --><label for="pool">Бассейн</label><!--
+              --><input type="checkbox" name="pool" id="pool"><!--         
+              --><label for="park">Парковка</label><!--    
+              --><input type="checkbox" name="park" id="park"><!--     
+              --><label for="wifi">Wi-Fi</label><!--  
+              --><input type="checkbox" name="wifi" id="wifi"><!--  
+            --></fieldset>
+            <fieldset class="filter-checkbox filter clearfix">
               <legend class="filter-title">Тип жилья:</legend>         
-              <label>
-                <input type="checkbox" name="hotel">
-                Гостиница
-              </label>        
-              <label>
-                <input type="checkbox" name="motel">
-                Мотель
-              </label>         
-              <label>
-                <input type="checkbox" name="apartments">
-                Апартаменты
-              </label>
+              <label for="hotel">Гостиница</label>  
+              <input type="checkbox" name="hotel" id="hotel"> 
+              <label for="motel">Мотель</label>  
+              <input type="checkbox" name="motel" id="motel">
+              <label for="appartments">Апартаменты</label>
+              <input type="checkbox" name="apartments" id="appartments">  
             </fieldset>
             <fieldset class="filter-range range">
               <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
@@ -105,12 +93,14 @@
             <div class="hotel-info"> 
               <a class="hotel-title" href="#">Amara Resort & Spa</a><!--
               --><span class="type">Гостиница</span><span class="price">От 3500 Р.</span><!--
-              --><a class="btn blue-more-btn" href="#">Подробнее</a><!--
-              --><a class="btn brown-booking-btn" href="#">Забронировать</a><!--
-            --></div>
+            --><div>
+                <a class="btn blue-more-btn" href="#">Подробнее</a>
+                <a class="btn brown-booking-btn" href="#">Забронировать</a>
+              </div>
+            </div>   
             <div class="hotel-rating">
                 <span>Рейтинг: 8,5</span>
-            </div>         
+            </div>        
           </article>
           <article class="hotel-item desert clearfix">
             <div class="hotel-img">
@@ -119,9 +109,11 @@
             <div class="hotel-info">       
               <a class="hotel-title" href="#">Desert Quail Inn</a><!--
               --><span class="type">Мотель</span><span class="price">ОТ 2000 Р.</span><!--
-              --><a class="btn blue-more-btn" href="#">Подробнее</a><!--
-              --><a class="btn brown-booking-btn" href="#">Забронировать</a><!--
-            --></div>
+              --><div>
+                <a class="btn blue-more-btn" href="#">Подробнее</a>
+                <a class="btn brown-booking-btn" href="#">Забронировать</a>
+              </div>
+            </div>
             <div class="hotel-rating">
                 <span>Рейтинг: 8,9</span>
             </div>               
@@ -133,9 +125,11 @@
             <div class="hotel-info">
               <a class="hotel-title" href="#">Villas at Poco Diablo</a><!--
               --><span class="type">Апартаменты</span><span class="price">От 4000 Р.</span><!--
-              --><a class="btn blue-more-btn" href="#">Подробнее</a><!--
-              --><a class="btn brown-booking-btn" href="#">Забронировать</a><!--
-            --></div>
+              --><div>
+                <a class="btn blue-more-btn" href="#">Подробнее</a>
+                <a class="btn brown-booking-btn" href="#">Забронировать</a>
+              </div>
+            </div>
             <div class="hotel-rating">
                 <span>Рейтинг: 9,2</span> 
             </div>           

@@ -122,7 +122,6 @@ h2 {
 html,
 body {
   min-width: 1200px;
-  min-height: 2762px;
   margin: 0;
   padding: 0;
 }
@@ -303,6 +302,10 @@ body {
   float: right;
 }
 
+.reason-image-right img {
+  display: block;
+}
+
 /* First features line */
 
 .features-one {
@@ -312,22 +315,23 @@ body {
 .feature-item {
   float: left;
   width: 400px;
+  text-align: center;
 }
 
 .feature-title {
   display: block;
   font-size: 21px;
   line-height: 26px;
-  margin-bottom: 27px;
+  margin-bottom: 22px;
 }
 
 .feature {
   position: relative;
-  padding-top: 108px;
+  padding-top: 154px;
   text-align: center;
 }
 
-.feature p {
+.feature.feature-item p {
   margin-bottom: 86px;
 } 
 
@@ -338,7 +342,8 @@ body {
   left: 162px;
   width: 76px;
   height: 76px;
-  background: url("../img/sprite.png") no-repeat;
+  
+  background: url("../img/sprite.png") no-repeat center yellow;
 }
 
 .feature.house-ico::before {
@@ -384,6 +389,10 @@ body {
   float: left;
 }
 
+.reason-image-left img{
+  display: block;
+}
+
 .reason-text-right { 
   float: right;
   width: 400px;
@@ -410,6 +419,15 @@ body {
 }
 
 
+.features-two .feature-title {
+  margin-top: 45px;
+  margin-bottom: 22px;
+}
+
+.feature-item p {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
 
 .search-title h2 {
   margin-top: 55px;
@@ -501,6 +519,7 @@ body {
 .search-form label {
   position: relative;
   width: 100px;
+  margin-top: 2px;
   margin-right: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -518,39 +537,40 @@ body {
   color: #000000; 
   text-transform: uppercase;
   outline: none;
-  border: none;
-  box-sizing: content-box;
+  border: 2px solid #f2f2f2;
   background: #f2f2f2;
 }
 
 .search-form input:hover {
+  border: 2px solid #ebebeb;
   background: #ebebeb;
 }
 
 .search-form input[type="text"]:focus {
-  margin: -2px;
-
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   border: 2px solid #e5e5e5;
-  box-sizing: content-box;
   background: #ffffff;
   outline: none;
 }
 
 .search-form .date {
   width: 297px;
-  padding: 6px;
-  padding-right: 38px;  
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px; 
+  padding-right: 34px;  
 }
 
 .search-form .date-label::after {
   content: "\e800";
   position: absolute;
   z-index: 15;
-  top: 0;
-  right: -335px;
+  top: 2px;
+  right: -348px;
   font-family: "symbols-sedona";
-  font-size: 21px;  
+  font-size: 23px;
+  line-height: 35px;
+  font-weight: normal;  
   color: #c2c2c2;
   cursor: pointer;  
 }
@@ -577,7 +597,7 @@ body {
 .number-field input[type="text"] {
   width: 38px;
   min-height: 38px;
-  margin-left: -4px;  
+  margin-left: 0px;  
   text-align: center;
   line-height: 26px;
   font-size: 14px;
@@ -590,7 +610,6 @@ body {
 }
 
 .number-field input[type="text"]:focus {
-  margin: 0 -2px;
   text-align: center;
   border: none;
   background: #f2f2f2;
@@ -669,13 +688,13 @@ body {
 }
 
 .filters-form {
-  padding-top: 31px;
+  padding-top: 27px;
+  padding-left: 72px 
 }
 
-.filter-checkbox-struct {
+.filter-checkbox {
   float: left;
   width: 140px;
-  margin-left: 72px;
   margin-right: 114px;
   font-size: 14px;
   color: #ffffff;
@@ -683,27 +702,17 @@ body {
 
 .filter-title {
   margin-bottom: 9px;
-
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
 }
 
-.filter-checkbox-appart {
-  float: left;
-  width: 140px;
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.filter-checkbox-struct input[type="checkbox"],
-.filter-checkbox-appart input[type="checkbox"]  {
+.filter-checkbox input[type="checkbox"] {
   display: none;
 }
 
-.filter-checkbox-struct input [type="checkbox"] + label,
-.filter-checkbox-appart input [type="checkbox"] + label {
+.filter-checkbox input[type="checkbox"] + label {
   position: relative;
   display: block;
   margin: 30px 0;
@@ -712,10 +721,9 @@ body {
   cursor: pointer;
 }
  
-.filter-checkbox-struct input [type="checkbox"] + label::before,
-.filter-checkbox-appart input [type="checkbox"] + label::before  {
-  content: "\2610";
+.filter-checkbox input[type="checkbox"] + label::before {
   position: absolute;
+  content: "\2610";
   top: 0;
   left: 0;
 
@@ -723,11 +731,9 @@ body {
   height: 22px;
   font-family: "symbols-sedona";
   font-size: 26px;
-  background: #ffffff;
 }
 
-.filter-checkbox-struct input [type="checkbox"]:checked + label::before,
-.filter-checkbox-appart input [type="checkbox"]:checked + label::before {
+.filter-checkbox input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
 
@@ -954,9 +960,8 @@ body {
 /* triangles */
 
 .sort-triangles .sort-icon-up,
-.sort-triangles .sort-icon-down {
+.sort-triangles .sort-icon-down { 
   float: right;
-  margin-left: 12px;
 }
 
 .sort-icon-up::before {
@@ -983,7 +988,7 @@ body {
   color: #81b3d2;
 }
 
-.sort-triangles .current {
+.sort-icon-down.current::before  {
   color: #81b3d2;
 }
 
@@ -992,7 +997,10 @@ body {
 
 
 .sort-triangles a {
+  margin-top: 33px;
+  margin-left: 12px;
   text-decoration: none;
+  cursor: pointer
 }
 
 /* Catalog items */
@@ -1023,8 +1031,8 @@ body {
 
 .hotel-title {
   display: block;
-  margin-top: 28px;
-  margin-bottom: 13px; 
+  margin-top: 25px;
+  margin-bottom: 8px; 
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -1043,7 +1051,8 @@ body {
 .hotel-info .type {
   display: inline-block;
   vertical-align: top;
-  width: 116px;
+  width: 110px;
+  margin-right: 6px; 
 }
 
 .hotel-info .price {
@@ -1054,8 +1063,8 @@ body {
 
 .hotel-info .btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 0 17px;
+  margin-top: 12px;
+  padding: 3px 17px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -1069,7 +1078,7 @@ body {
 }
 
 .blue-more-btn {
-  margin-right: 6px;
+  margin-right: 3px;
 }
 
  .brown-booking-btn {
@@ -1102,10 +1111,9 @@ body {
 .hotel-rating {
   position: relative;
   margin-top: 93px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 3px 9px;
+  font-size: 14px;
+  line-height: 21px;
   color: #666666;
   text-align: center;
   background: #f2f2f2;
@@ -1113,8 +1121,8 @@ body {
 
 .hotel-rating:after {
   position: absolute;
-  top: -64px;
-  right: -6px;
+  top: -70px;
+  right: -7px;
 
   font-family: "symbols-sedona";  
   font-size: 19px;
