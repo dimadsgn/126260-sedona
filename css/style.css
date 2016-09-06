@@ -322,16 +322,16 @@ body {
   display: block;
   font-size: 21px;
   line-height: 26px;
-  margin-bottom: 22px;
 }
 
 .feature {
   position: relative;
-  padding-top: 154px;
+  padding-top: 158px;
   text-align: center;
 }
 
 .feature.feature-item p {
+  margin-top: 18px;
   margin-bottom: 86px;
 } 
 
@@ -343,40 +343,20 @@ body {
   width: 76px;
   height: 76px;
   
-  background: url("../img/sprite.png") no-repeat center yellow;
+  background: url("../img/sprite.png") no-repeat center;
 }
 
 .feature.house-ico::before {
-  background-position: -587px -10px;
+  background-position: -586px -6px;
 }
 
 .feature.food-ico::before {
-  background-position: -409px -10px; 
+  background-position: -408px -4px;
 }
 
 .feature.gift-ico::before {
-  background-position: -503px -10px;
+  background-position: -497px -10px;
 }
-
-
-
-/*
-.icon-food {
-  display: inline-block;
-  width: 74px;
-  height: 70px;
-  background: url("../img/sprite.png") no-repeat;
-
-}
-
-.icon-gift {
-  display: inline-block;
-  width: 64px;
-  height: 76px;
-  background: url("../img/sprite.png") no-repeat;
-
-}
-*/
 
 /* Second Reason */
 
@@ -568,9 +548,9 @@ body {
   top: 2px;
   right: -348px;
   font-family: "symbols-sedona";
-  font-size: 23px;
+  font-size: 21px;
   line-height: 35px;
-  font-weight: normal;  
+  font-weight: 500;  
   color: #c2c2c2;
   cursor: pointer;  
 }
@@ -601,18 +581,20 @@ body {
   text-align: center;
   line-height: 26px;
   font-size: 14px;
+  border: 2px solid #f2f2f2;
   box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
 .number-field input[type="text"]:hover {
-  background: #f2f2f2;
+  border: 2px solid transparent;
+  background: #ebebeb;
 }
 
 .number-field input[type="text"]:focus {
   text-align: center;
-  border: none;
-  background: #f2f2f2;
+  border: 2px solid #e5e5e5 ;
+  background: #ffffff;
 }
 
 .number-field button {
@@ -628,8 +610,8 @@ body {
   text-decoration: none;
 }
 
-.number-childs {
-  max-width: 55px;
+.childs-label {
+  max-width: 60px;
   margin-left: 50px;
 }
 
@@ -658,7 +640,7 @@ body {
   width: 458px;
   height: 58px;
   margin: 0 auto;
-  margin-top: 54px;  
+  margin-top: 44px;  
   font-size: 21px;
   font-weight: 700;
   line-height: 58px;
@@ -701,7 +683,6 @@ body {
 }
 
 .filter-title {
-  margin-bottom: 9px;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -715,7 +696,7 @@ body {
 .filter-checkbox input[type="checkbox"] + label {
   position: relative;
   display: block;
-  margin: 30px 0;
+  margin: 24px 0;
   line-height: 21px;
   padding-left: 40px;
   cursor: pointer;
@@ -737,15 +718,23 @@ body {
   content: "\2611";
 }
 
+.filter-checkbox input[type="checkbox"] + label:hover::before {
+  color: #fefefe;
+}
+
+.filter-checkbox input[type="checkbox"]:disabled + label::before {
+  color: #6a6a6a;
+}
+
 /* Filter - range */
 
 .filter-range {
   float: right;
   width: 330px;
-  margin-right: 73px;
+  margin-right: 72px;
 
   color: #ffffff;
-  text-align: center;
+  text-transform: uppercase; 
 }
 
 .filter-range-title {
@@ -761,7 +750,7 @@ body {
 
   height: 36px;
   margin-bottom: 20px;
-
+  margin-left: 12px;
   font-size: 0;
 
   border: 2px solid #ffffff;
@@ -793,7 +782,7 @@ body {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 80px;
   padding-left: 65px;
 }
 
@@ -813,6 +802,7 @@ body {
   position: relative;
 
   margin-bottom: 32px;
+  margin-left: 12px;
 }
 
 .range-controls .scale {
@@ -881,12 +871,6 @@ body {
   border: none;
   padding: 0;
 }
-
-.range {
-  border: none;
-  padding: 0;
-}
-
 
 .filter label {
   display: block;

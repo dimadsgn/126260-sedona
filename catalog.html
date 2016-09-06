@@ -35,26 +35,26 @@
       <main class="container clearfix">
         <div class="filters">
           <form class="filters-form" action="echo" method="post">
-            <fieldset class="filter-checkbox filter clearfix">                   
-              <legend class="filter-title">Инфраструктура:</legend><!--
-              --><label for="pool">Бассейн</label><!--
-              --><input type="checkbox" name="pool" id="pool"><!--         
-              --><label for="park">Парковка</label><!--    
-              --><input type="checkbox" name="park" id="park"><!--     
-              --><label for="wifi">Wi-Fi</label><!--  
-              --><input type="checkbox" name="wifi" id="wifi"><!--  
-            --></fieldset>
+            <fieldset class="filter-checkbox filter clearfix">
+              <legend class="filter-title">Инфраструктура:</legend>
+              <input type="checkbox" name="pool" id="pool"> 
+              <label for="pool">Бассейн</label>  
+              <input type="checkbox" name="park" id="park">   
+              <label for="park">Парковка</label>    
+              <input type="checkbox" name="wifi" id="wifi">
+              <label for="wifi">Wi-Fi</label>  
+            </fieldset>
             <fieldset class="filter-checkbox filter clearfix">
               <legend class="filter-title">Тип жилья:</legend>         
-              <label for="hotel">Гостиница</label>  
               <input type="checkbox" name="hotel" id="hotel"> 
-              <label for="motel">Мотель</label>  
+              <label for="hotel">Гостиница</label>  
               <input type="checkbox" name="motel" id="motel">
-              <label for="appartments">Апартаменты</label>
+              <label for="motel">Мотель</label>  
               <input type="checkbox" name="apartments" id="appartments">  
+              <label for="appartments">Апартаменты</label>
             </fieldset>
-            <fieldset class="filter-range range">
-              <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (Р):</div>
               <div class="price-controls"><!--
               --><label class="min-price">от <input type="text" name="min-price" value="0"></label><!--
               --><label class="max-price">до <input type="text" name="max-price" value="3000"></label><!--
@@ -67,7 +67,7 @@
                 <div class="range-toggle range-toggle-max"></div>
               </div>
               <button class="btn-transparent" type="submit">Показать</button>
-            </fieldset>    
+            </div>    
           </form>
         </div>  
         <div class="results">
