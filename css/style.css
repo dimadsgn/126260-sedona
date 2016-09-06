@@ -702,8 +702,8 @@ body {
   display: none;
 }
 
-.filter-checkbox-struct input [type="checkbox"] + label,
-.filter-checkbox-appart input [type="checkbox"] + label {
+.filter-checkbox-struct input[type="checkbox"] + label,
+.filter-checkbox-appart input[type="checkbox"] + label {
   position: relative;
   display: block;
   margin: 30px 0;
@@ -712,8 +712,8 @@ body {
   cursor: pointer;
 }
  
-.filter-checkbox-struct input [type="checkbox"] + label::before,
-.filter-checkbox-appart input [type="checkbox"] + label::before  {
+.filter-checkbox-struct input[type="checkbox"] + label::before,
+.filter-checkbox-appart input[type="checkbox"] + label::before  {
   content: "\2610";
   position: absolute;
   top: 0;
@@ -723,11 +723,11 @@ body {
   height: 22px;
   font-family: "symbols-sedona";
   font-size: 26px;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
-.filter-checkbox-struct input [type="checkbox"]:checked + label::before,
-.filter-checkbox-appart input [type="checkbox"]:checked + label::before {
+.filter-checkbox-struct input[type="checkbox"]:checked + label::before,
+.filter-checkbox-appart input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
 
