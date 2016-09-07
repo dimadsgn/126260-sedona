@@ -634,13 +634,13 @@ body {
 }
 
 .number-field .ico-plus::before {
-  content: "\e802";
+  content: "\e801";
   font-family: "symbols-sedona";  
   color: #c2c2c2; 
 }
 
 .number-field .ico-minus::before {
-  content: "\e801";
+  content: "\e802";
   font-family: "symbols-sedona";  
   color: #c2c2c2; 
 }
