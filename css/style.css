@@ -1,7 +1,7 @@
 /* FONTS */
 
 body {
-  font-family: "PT Sans", "Helvetica", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400; 
   text-transform: uppercase;	 
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  font-family: "PT Sans", "Helvetica", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700; 
   text-transform: uppercase;  
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-family: "PT Sans", "Helvetica", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 700; 
   text-transform: uppercase;	 
@@ -29,7 +29,7 @@ h2 {
   color: #000000;
 }
 
-/* ADD SPRITE */
+/* SPRITE */
 
 .sprite {
     background-image: url("../img/sprite.png");
@@ -89,8 +89,8 @@ h2 {
 [class*=" icon-"]::before {
   display: inline-block;
   width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
+  margin-right: 0em;
+  margin-left: 0em;
 
   font-weight: normal;
   line-height: 1em;
@@ -285,18 +285,25 @@ body {
 
 .reason-title {
   display: block;
-  margin-top: 50px;
+  margin-top: 54px;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   color: #ffffff;
 }
 
-.reason-text-left p {
-  margin-top: 22px;
-  margin-bottom: 22px;
+.reason-text-left .item-number {
+  margin-top: 23px;
+  margin-bottom: 21px;
   font-size: 14px;
   line-height: 21px;
 }
+
+/*.reason-text-left  p {
+  margin-top: 24px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 21px;
+} */
 
 .reason-image-right {
   float: right;
@@ -330,9 +337,10 @@ body {
   text-align: center;
 }
 
+
 .feature.feature-item p {
-  margin-top: 18px;
-  margin-bottom: 86px;
+  margin-top: 20px;
+  margin-bottom: 83px;
 } 
 
 .feature::before {
@@ -383,9 +391,9 @@ body {
   background: #81b3d2;
 }
 
-.reason-text-right p {
-  margin-top: 22px;
-  margin-bottom: 22px;
+.reason-text-right .item-number {
+  margin-top: 23px;
+  margin-bottom: 21px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -398,6 +406,11 @@ body {
   background: #eeeeee;
 }
 
+.features-two .feature-title {
+  display: block;
+  font-size: 21px;
+  line-height: 21px;
+}
 
 .features-two .feature-title {
   margin-top: 45px;
@@ -409,6 +422,10 @@ body {
   margin-bottom: 22px;
 }
 
+.search-hotels {
+ position: relative;
+}
+
 .search-title h2 {
   margin-top: 55px;
   font-size: 30px;
@@ -418,7 +435,7 @@ body {
 
 .search-title p {
   margin-top: 30px; 
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -431,7 +448,7 @@ body {
 
 .btn {
   display: block;
-  font-family: "PT Sans", "Helvetica", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -478,6 +495,7 @@ body {
   display: block;
   position: absolute;
   z-index: 10;
+  top: 235px;
   left: 50%;
   width: 458px; 
   height: 285px;
@@ -499,7 +517,6 @@ body {
 .search-form label {
   position: relative;
   width: 100px;
-  margin-top: 2px;
   margin-right: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -510,10 +527,11 @@ body {
 .search-form input[type="text"] {
   margin-bottom: 29px;
   text-align: left;
-  font-family: "PT Sans", "Helvetica", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+  min-height: 26px;
   color: #000000; 
   text-transform: uppercase;
   outline: none;
@@ -535,8 +553,8 @@ body {
 
 .search-form .date {
   width: 297px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 13px; 
   padding-right: 34px;  
 }
@@ -611,8 +629,8 @@ body {
 }
 
 .childs-label {
-  max-width: 60px;
-  margin-left: 50px;
+  max-width: 55px;
+  margin-left: 55px;
 }
 
 .number-field .ico-plus::before {
@@ -640,7 +658,7 @@ body {
   width: 458px;
   height: 58px;
   margin: 0 auto;
-  margin-top: 44px;  
+  margin-top: 53px;  
   font-size: 21px;
   font-weight: 700;
   line-height: 58px;
@@ -696,6 +714,7 @@ body {
 .filter-checkbox input[type="checkbox"] + label {
   position: relative;
   display: block;
+  vertical-align: middle;
   margin: 24px 0;
   line-height: 21px;
   padding-left: 40px;
@@ -723,7 +742,7 @@ body {
 }
 
 .filter-checkbox input[type="checkbox"]:disabled + label::before {
-  color: #6a6a6a;
+  color: #808080;
 }
 
 /* Filter - range */
@@ -790,8 +809,12 @@ body {
   width: 50px;
   margin: 0;
 
-  color: inherit;
-  font: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  text-align: left;
+  color: #ffffff;
 
   background: none;
   border: none;
