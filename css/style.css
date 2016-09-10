@@ -1239,9 +1239,12 @@ body {
   background: #ffffff;
 }
 
-.footer-hashtag a {
+.footer-hashtag {
   float: left;
   width: 400px;
+}
+
+.footer-hashtag a {
   padding-top: 45px;
   font-size: 21px;
   font-weight: 700;
@@ -1251,12 +1254,12 @@ body {
   text-decoration: none;
 }
 
+
 .footer-social {
  float: left;
  width: 400px;
  padding-top: 36px;
  text-align: center;
-
 }
 
 .social-btn {
