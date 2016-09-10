@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
@@ -36,14 +36,14 @@
           <img class="main-title" src="img/main_text.png" width="458" height="352" alt="Welcome to the gorgeous">
         </div>
         <div class="content-title">
-          <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+          <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
         </div>      
         <section class="reason-one clearfix">
           <div class="reason-text-left">
-            <b class="reason-title">Настоящий<br> городок</b>
+            <b class="reason-title">Настоящий городок</b>
             <p class="item-number">№1</p>
-            <p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="reason-image-right">
             <img src="img/reason_1_img.jpg" width="800" height="256" alt="Настоящий городок">
@@ -67,7 +67,7 @@
           <div class="reason-text-right">
             <b class="reason-title">Там есть<br> мост дьявола</b>
             <p class="item-number">№2</p>
-            <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <div class="reason-image-left">
             <img src="img/reason_2_img.jpg" width="800" height="256" alt="Мост дьявола">
@@ -75,17 +75,17 @@
         </section>
         <section class="features-two clearfix">
           <div class="feature-item">
-            <b class="feature-title">Небольшая<br> площадь</b>
+            <b class="feature-title">Небольшая площадь</b>
             <p class="item-number">№3</p>
             <p>Все достопримечательности<br> находятся очень близко</p>
           </div>
           <div class="feature-item">
-            <b class="feature-title">Красивая<br> дорога</b>
+            <b class="feature-title">Красивая дорога</b>
             <p class="item-number">№4</p>
             <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
           </div>
           <div class="feature-item">
-            <b class="feature-title">Мало<br> туристов</b>
+            <b class="feature-title">Мало туристов</b>
             <p class="item-number">№5</p>
             <p>Большинство едет в Гранд каньон и<br> толпится там</p>
           </div>
@@ -93,11 +93,11 @@
         <section class="search-hotels">
           <div class="search-title">
             <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p> 
+            <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Cедоне</p> 
           </div>
-          <a class="btn brown-label-btn" href="modal-content">Поиск гостиницы в Седоне</a>
+          <a class="btn show-form-btn" href="form.html">Поиск гостиницы в Седоне</a>
           <div class="modal-content">
-            <form class="search-form" method="post"><!--
+            <form class="search-form" action="/echo" method="post"><!--
               --><label class="date-label" for="checkin-date">Дата заезда:</label><!--
               --><input class="date" type="text" name="checkin-date" id="checkin-date" placeholder="24 Апреля 2016"><!--
               --><label class="date-label" for="checkout-date">Дата выезда:</label><!--
@@ -118,7 +118,10 @@
             </form>
           </div>
         </section>
-        <div class="search-map"></div>        
+        <section class="search-map" id="search-map">
+          <div class="map-background"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593490.4819024269!2d-112.06731503618497!3d34.74040788567775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2sus!4v1472592412136" width="1200" height="593"∫ ></iframe>
+        </section>
       </main>
       <footer class="page-footer">
         <div class="container clearfix">
@@ -143,6 +146,7 @@
         </div>
       </footer> 
     </div>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>
 
